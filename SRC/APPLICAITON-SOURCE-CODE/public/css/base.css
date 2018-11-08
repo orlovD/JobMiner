@@ -1,0 +1,324 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url("../images/back.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    direction: ltr;
+    font-size: 20px;
+    color: white;
+}
+
+/* Menu Option Checkbox */
+.menuOptionCheckbox {
+	width: 20px;
+	position: relative;
+	display: inline-block;
+    padding: 0px 25px 15px 0px;
+	text-align: right;
+}
+
+.checkbox	 {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	border-radius: 4px;
+	padding: 0px;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+
+	background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -ms-linear-gradient(top, #222 0%, #45484d 100%);
+	background: linear-gradient(top, #222 0%, #45484d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+
+.checkbox:after {
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #fcfff4;
+	border-top: none;
+	border-right: none;
+	padding: 0px;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.uncheckedCheckbox:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	padding: 0px;
+}
+
+.uncheckedCheckbox:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+	padding: 0px;
+}
+
+.checkedCheckbox + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	padding: 0px;
+}
+
+/* searchbar */
+
+.searchbar
+{
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	overflow-y: visible;
+	background-color: black;
+  	border: 3px solid #fcfff4;
+    line-height: 60px;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	-webkit-flex-direction: row; /* Safari */
+	flex-direction:         row;
+	-webkit-flex-wrap: wrap; /* Safari */
+	flex-wrap:         wrap;
+	-webkit-align-items: flex-start; /* Safari */
+	align-items:         flex-start;
+	-webkit-justify-content: space-around; /* Safari */
+	justify-content:         space-around;
+	border-radius: 5px;
+	z-index: 2;
+}
+
+.after-search {
+    clear: both;
+}
+
+.searchword
+{
+	display: inline;
+	color:white;
+  font-size: 30px;
+	padding: 0px 20px;
+}
+
+.inline-info
+{
+  padding: 0px 10px;
+  display: inline;
+}
+
+input, ul, p
+{
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    margin: 2px;
+}
+
+input
+{
+  height: 35px;
+}
+
+.menu-search-line
+{
+  display: inline;
+}
+
+.menu-search-line:hover
+{
+	background-color: #111;
+}
+
+.menu-item
+{
+	height: 60px;
+	line-height: 60px;
+	background-color: #333;
+    text-align: center;
+    border-radius: 20px;
+    overflow-y: hidden;
+}
+
+.menu-item:hover
+{
+	background-color: #111;
+	cursor: pointer;
+}
+
+.menu-container
+{
+  height: 60px;
+	line-height: 60px;
+	width: auto;
+	overflow: hidden;
+}
+
+.menu-container:hover
+{
+	overflow: visible;
+}
+
+.item-name
+{
+	width:100%;
+}
+.autocomplete-container
+{
+  height: 60px;
+  line-height: 60px;
+  padding: 7px;
+}
+
+.menu-options-container
+{
+	background-color: #333;
+    border-radius: 20px;
+}
+
+.menu-option
+{
+    padding: 0px 3px;
+}
+
+.opt
+{
+	background-color: #517CFB;
+}
+
+.opt:hover
+{
+	background-color: #3E39EA;
+}
+
+.menu-option-name
+{
+	height: 40px;
+	display: inline;
+	text-align: center;
+}
+
+.menu-checkbox-container
+{
+	display: inline;
+}
+
+.menuOptionCheckbox
+{
+
+}
+
+.menu-button
+{
+	background-color:  rgba(57, 52, 143, 1);
+	padding: 0px 10px;
+}
+
+.menu-button:hover
+{
+	background-color:  rgba(46, 51, 200, 1);
+	-webkit-box-shadow: 3px 3px 3px 0px rgba(122,117,42,1);
+	-moz-box-shadow: 3px 3px 3px 0px rgba(122,117,42,1);
+	box-shadow: 3px 3px 3px 0px rgba(122,117,42,1);
+}
+
+
+.content
+{
+	background-color: white;
+	background-color:  rgba(0,0,0,0.5);
+	border-radius: 20px;
+	height: 100%;
+	width: 94%;
+	margin: 3%;
+}
+
+.jobPostList
+{
+	position: absolute;
+	top:60px;
+}
+
+.jobPost
+{
+	opacity: 1.0;
+	background-color:  rgba(3,21,115,0.9);
+	border-radius: 10px;
+	border: 3px solid #C77F7F;
+	display: inline-block;
+	width: 31%;
+	height: 400px;
+	overflow: hidden;
+	margin: 1%;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.groupTitle
+{
+	background-color:  rgba(0,0,0,0.9);
+	border-radius: 10px;
+	border: 1px solid #9C4747;
+	text-align: center;
+	padding: 3px;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.altText
+{
+  text-align: center;
+  color: black;
+}
+
+.clickable
+{
+	cursor: pointer;
+}
+
+.groupName, .blue
+{
+  color: blue;
+}
+
+.groupName
+{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+
+.postContent
+{
+	cursor: pointer;
+	text-overflow:ellipsis;
+	padding: 10px 20px 10px 10px;
+}
